@@ -19,9 +19,9 @@ Løsningen på applikasjonen består av følgende aktiviteter og klasser:
 
 •	RegTurActivity - > Aktivitet hvor bruker kan skrive inn all nødvendig informasjon om turen. 
 
-  o	Vis i kart knappen tar med seg den nåværende posisjonen og tar med deg videre til googlemaps sin egen applikasjon og viser deg hvor du   er.
-  o	En egen spinner for å velge hva slags type tur det er
-  o	En seekbar som lar deg velge hvor høyt turen ligger
+  -	Vis i kart knappen tar med seg den nåværende posisjonen og tar med deg videre til googlemaps sin egen applikasjon og viser deg hvor du   er.
+  -	En egen spinner for å velge hva slags type tur det er
+  -	En seekbar som lar deg velge hvor høyt turen ligger
 
 •	TurerClass og RegTurClass -> Hjelpeklasse som kobler applikasjonen opp mot databasen, via api.php. Disse utfører handlinger opp mot databasen.
 
