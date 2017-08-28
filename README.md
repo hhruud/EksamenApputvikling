@@ -9,11 +9,12 @@ Løsningen på applikasjonen består av følgende aktiviteter og klasser:
 
 •	MainActivity -> Hovedaktivitet som ønsker bruker velkommen, her kan se registrerte turer i form av et ListView. I tillegg er det lagt til et adapterview som lar deg trykke på en av turene og tar med deg videre til nytt vindu, som viser hvor turen ligger, beskrivelse av turen, lengde og hvem som har registrert den.
 
-  Den inneholder følgende elementer
-  o	Navn på tur
-  o	Hvor målet for turen ligger i et kart
-  o	Beskrivelse av turen
-  o	Hvor lang den er, og hvem som har registrert den.
+  Den inneholder følgende elementer:
+  
+  -	Navn på tur
+  -	Hvor målet for turen ligger i et kart
+  -	Beskrivelse av turen
+  -	Hvor lang den er, og hvem som har registrert den.
 
 
 •	RegTurActivity - > Aktivitet hvor bruker kan skrive inn all nødvendig informasjon om turen. 
