@@ -17,6 +17,7 @@ import java.net.URLEncoder;
 
 /**
  * Created by Håkon on 31.05.2017.
+ * Klasse for å registere turer
  */
 
 public class RegTur extends AsyncTask<String, Void, String> {
