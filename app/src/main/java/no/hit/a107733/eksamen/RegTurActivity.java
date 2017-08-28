@@ -216,8 +216,7 @@ public class RegTurActivity extends AppCompatActivity  implements GoogleApiClien
 
     @Override
     public void onConnectionFailed(ConnectionResult result) {
-        // An unresolvable error has occurred and a connection to Google APIs
-        // could not be established. Display an error message, or handle the failure silently
+      
         Toast.makeText(getApplicationContext(),
                 "Klarte ikke å koble til Google Play Services", Toast.LENGTH_LONG).show();
     }
@@ -284,7 +283,7 @@ public class RegTurActivity extends AppCompatActivity  implements GoogleApiClien
                     e.printStackTrace();
                 }
             } else {
-                // Permission was denied or request was cancelled
+              
                 Toast.makeText(getApplicationContext(),
                         "Kan ikke vise posisjon uten tillatelse", Toast.LENGTH_LONG).show();
             }
