@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="no.hit.a107733.eksamen.RegTurActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            android:weightSum="1">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start|bottom"
+                android:layout_margin="15dp"
+                android:clickable="true"
+                android:tint="@color/colorPrimary"
+                app:backgroundTint="@android:color/holo_blue_bright"
+                app:elevation="13dp"
+                app:fabSize="mini"
+                app:rippleColor="@color/colorPrimary"
+                app:srcCompat="?android:attr/homeAsUpIndicator" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="casual"
+                android:text="@string/registrer_tur"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="28sp" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+        <EditText
+            android:id="@+id/Navn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="@string/edittext1"
+            android:inputType="textPersonName" />
+
+
+        <Spinner
+            android:id="@+id/Type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="28dp" />
+
+        <EditText
+            android:id="@+id/Lengde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="@string/hvor_lang_er_turen"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/Beskrivelse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="33dp"
+            android:hint="@string/edittext2"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/mohText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="23dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/meteroverhavet"
+            android:textSize="18sp" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="65dp"
+            android:max="10000" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="34dp"
+            android:text="@string/din_n_v_rende_posisjon"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+            android:id="@+id/breddeGrad"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:hint="@string/latitude" />
+
+        <TextView
+            android:id="@+id/lengdeGrad"
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="9dp"
+            android:hint="@string/longtitude" />
+
+            <Button
+                android:id="@+id/kart_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="visIKart"
+                android:text="Vis i kart" />
+
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/Regav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/registrert_av"
+            android:inputType="textPersonName"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/turReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/button1"
+            android:fontFamily="casual"
+            android:onClick="turReg"
+            android:text="@string/button3" />
+
+
+    </LinearLayout>
+</ScrollView>

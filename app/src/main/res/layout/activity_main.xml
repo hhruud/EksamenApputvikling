@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_ansattliste"
+    tools:context=".MainActivity"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:weightSum="1">
+
+
+
+        <TextView
+            android:id="@+id/TurerId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="40dp"
+            android:fontFamily="casual"
+            android:lines="2"
+            android:text="Velkommen! \nVelg en tur"
+
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:tint="@color/colorPrimary"
+
+            app:backgroundTint="@android:color/holo_blue_bright"
+            app:elevation="13dp"
+            app:fabSize="normal"
+            app:rippleColor="@color/colorPrimary"
+            app:srcCompat="@android:drawable/ic_input_add"
+            tools:ignore="RtlHardcoded" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        tools:context=".MainActivity"
+        android:weightSum="1">
+
+        <!-- ListView for å vise varelisten -->
+
+        <ListView
+            android:id="@+id/test1"
+
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:drawSelectorOnTop="true"
+            android:listSelector="#8613a9ef"
+
+            android:smoothScrollbar="true"></ListView>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout >

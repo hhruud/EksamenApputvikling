@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Tur-app</string>
+    <string name="button1">Vis Turer</string>
+    <string name="button2">Registrer Tur</string>
+
+
+    <string name="registrer_tur">Registrer Tur</string>
+    <string name="edittext1">Navnet på turen</string>
+    <string name="edittext2">Beskrivelse av turen</string>
+    <string name="button3">Legg til tur</string>
+    <string name="latitude">lat</string>
+    <string name="longtitude">long</string>
+    <string name="meteroverhavet">moh</string>
+
+    <string name="din_n_v_rende_posisjon">Din nåværende posisjon</string>
+    <string name="registrert_av">Registrert av:</string>
+    <string name="hvor_lang_er_turen">Hvor lang er turen</string>
+
+    <string name="todo">TODO</string>
+    <string name="navnetpaturen">navnid</string>
+
+
+
+    <string-array name="typer">
+        <item>Utsiktsplass</item>
+        <item>Husmannplass</item>
+        <item>Fjelltop</item>
+        <item>Badeplass</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="velg_en_tur">Velg en tur</string>
+    <string name="beskrivelse">Beskrivelse</string>
+
+</resources>
