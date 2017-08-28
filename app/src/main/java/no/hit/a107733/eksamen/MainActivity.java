@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 
         lesAlleTurerAsynkront();
-        //oppdaterVareListView(vareArrayList);
+        //oppdaterTurListView(TurArrayList);
     }
 
 
@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         startActivity(i);
     }
 
-    // **** Leksjon  9a: Henter alle varer fra REST-tjeneste
+    // Henter alle turer fra REST-tjeneste
     public void lesAlleTurerAsynkront() {
         if (isOnline()){
             LastTurListe turListeLaster = new LastTurListe();
@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
 
-    // **** Leksjon  9a: Bygger nytt adapter og oppdaterer ListViewet
+    // Bygger nytt adapter og oppdaterer ListViewet
     public void oppdaterTurListView(ArrayList<Turer> nyTurListe) {
         turerArrayAdapter = new ArrayAdapter<Turer>(this, android.R.layout.simple_list_item_1, nyTurListe);
         turListen.setAdapter(turerArrayAdapter);
@@ -154,14 +154,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mMap = googleMap;
 
 
-        // Add a marker in Sydney, Australia, and move the camera.
+        // Legger til markør på kartet
         LatLng sydney = new LatLng(-34, 151);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 
 
-    // **** Leksjon 9a: Indre asynkron klasse som henter alle varer fra databasen
+    // Indre asynkron klasse som henter alle varer fra databasen
     private class LastTurListe extends AsyncTask<String , String , Long > {
         @Override
         protected void onPreExecute() {
@@ -208,18 +208,18 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             } finally {
                 connection.disconnect();
             }
-        }  // End of doInBackground
+        }  
 
         @Override
         protected void onPostExecute(Long result) {
             if (result==0){
-                // **** Leksjon 9a: Oppdaterer GUIet etter at alle varer er lest fra databasen
+                // Oppdaterer GUIet etter at alle turer er lest fra databasen
                 oppdaterTurListView(turerArrayList);
             }else{
                 Toast.makeText(getParent(),
-                        "Noe gikk galt under lasting av varer fra database.", Toast.LENGTH_SHORT).show();
+                        "Noe gikk galt under lasting av turer fra database.", Toast.LENGTH_SHORT).show();
             }
-        }  // End of onPostExecute
+        }  
     }
 
 
