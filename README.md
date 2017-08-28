@@ -25,4 +25,5 @@ Løsningen på applikasjonen består av følgende aktiviteter og klasser:
 
 •	TurerClass og RegTurClass -> Hjelpeklasse som kobler applikasjonen opp mot databasen, via api.php. Disse utfører handlinger opp mot databasen.
 
+Api.php er hentet fra skolens side, og er en "universal" backend løsning for håndtering av post, get, put oprasjoner mot databasen
 
