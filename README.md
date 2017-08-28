@@ -1,6 +1,5 @@
 Tur-applikasjon
 
-Databasen
 Databasen var det første jeg begynte på, jeg tok utgangspunktet i dummydataene som vi fikk med Excel-arket som var lagt ved. I tillegg la jeg til en kolonne som heter Lengde. Til å holde på dataene om turen trengte jeg kun en tabell.
 Kommunikasjonen mellom Databasen og klienten skjer igjennom API’et som vi har brukt i vår, api.php
 
@@ -25,4 +24,3 @@ o	En seekbar som lar deg velge hvor høyt turen ligger
 •	TurerClass og RegTurClass -> Hjelpeklasse som kobler applikasjonen opp mot databasen, via api.php. Disse utfører handlinger opp mot databasen.
 
 
-Referanser
