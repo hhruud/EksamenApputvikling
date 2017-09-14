@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             LastTurListe turListeLaster = new LastTurListe();
             turListeLaster.execute();
         }else{
-            Toast.makeText(this, "Ingen nettverkstilgang. Kan ikke laste varer.",
+            Toast.makeText(this, "Ingen nettverkstilgang. Kan ikke laste turer.",
                     Toast.LENGTH_SHORT).show();
         }
     }
